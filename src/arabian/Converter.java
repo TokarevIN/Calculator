@@ -42,9 +42,7 @@ public class Converter {
     }
 
     public String intToRoman(int number) {
-        if (number <= 0) {
-            throw new IllegalArgumentException("Число должно быть положительным");
-        }
+
 
         StringBuilder roman = new StringBuilder();
 
