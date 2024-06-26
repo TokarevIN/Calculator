@@ -51,6 +51,9 @@ public class Calculator {
                 a = Integer.parseInt(data[0]);
                 b = Integer.parseInt(data[1]);
             }
+            if (a <= 0 || a > 10 || b <= 0 || b > 10) {
+                throw new IllegalArgumentException("Число должно быть от 0 до 10");
+            }
             // Выполняем с числами арифметическое действие
             int result = switch (actions[actionIndex]) {
                 case "+" -> a + b;
