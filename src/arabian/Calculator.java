@@ -52,7 +52,7 @@ public class Calculator {
                 b = Integer.parseInt(data[1]);
             }
             if (a <= 0 || a > 10 || b <= 0 || b > 10) {
-                throw new IllegalArgumentException("Число должно быть от 0 до 10");
+                throw new IllegalArgumentException("Число должно быть от 1 до 10");
             }
             // Выполняем с числами арифметическое действие
             int result = switch (actions[actionIndex]) {

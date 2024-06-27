@@ -37,7 +37,7 @@ public class Converter {
         }
 
         // Регулярное выражение для стандартного и нестандартного формата римских чисел
-        String romanPattern = "^(M{0,3})(CM|CD|D?C{0,3})(XC|XL|L?X{0,3})(III|IV|V?I{0,3})$";
+        String romanPattern = "^(M{0,3})(CM|CD|D?C{0,3})(XC|XL|L?X{0,3})(IX|IV|V?I{0,3})$";
         return number.matches(romanPattern);
     }
 
